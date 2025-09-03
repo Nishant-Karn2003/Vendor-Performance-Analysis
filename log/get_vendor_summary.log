@@ -1,0 +1,46 @@
+2025-08-21 12:02:35,970 - INFO - Creating SQLAlchemy engine...
+2025-08-21 12:02:36,934 - INFO - Creating Vendor Summary DataFrame...
+2025-08-21 12:02:36,934 - DEBUG - Running vendor summary SQL query...
+2025-08-21 12:06:02,470 - DEBUG - Vendor summary loaded: 22286 rows, 13 cols
+2025-08-21 12:06:02,488 - INFO - Head:
+   VendorNumber                   VendorName  Brand  ActualPricePerProduct  PurPricePerProduct  TotalQuantityPurchased  TotalAmountSpent Volume  SalesPricePerQuantity  TotalQuantitySold  TotalEarned  TotalExcise  TotalFreight
+0         12546  JIM BEAM BRANDS COMPANY       1004                  16.49               10.65                   650.0           6922.50    750                  16.49                5.0        82.45         3.94     123880.97
+1         12546  JIM BEAM BRANDS COMPANY       1004                  16.49               10.65                   650.0           6922.50    750                  14.49               37.0       536.13        29.14     123880.97
+2         12546  JIM BEAM BRANDS COMPANY       1005                  34.99               27.34                   247.0           6752.98    375                  34.99              918.0     32120.82       359.97     123880.97
+3          2000  SOUTHERN WINE & SPIRITS NE   10058                  13.99                9.26                 21097.0         195358.22    750                  14.99             6447.0     96640.53       718.86      18808.83
+4          2000  SOUTHERN WINE & SPIRITS NE   10058                  13.99                9.26                 21097.0         195358.22    750                  14.99             6447.0     96640.53       718.86        207.76
+2025-08-21 12:06:02,488 - INFO - Cleaning Data...
+2025-08-21 12:06:02,488 - DEBUG - Cleaning data...
+2025-08-21 12:06:02,533 - DEBUG - Cleaning complete.
+2025-08-21 12:06:02,540 - INFO - Head (clean):
+   VendorNumber                  VendorName  Brand  ActualPricePerProduct  PurPricePerProduct  TotalQuantityPurchased  TotalAmountSpent  Volume  SalesPricePerQuantity  TotalQuantitySold  TotalEarned  TotalExcise  TotalFreight  GrossProfit  ProfitMargin  StockTurnOver  SalesToPurchaseRatio
+0         12546     JIM BEAM BRANDS COMPANY   1004                  16.49               10.65                   650.0           6922.50   750.0                  16.49                5.0        82.45         3.94     123880.97     -6840.05    -98.808956         0.0077              0.011910
+1         12546     JIM BEAM BRANDS COMPANY   1004                  16.49               10.65                   650.0           6922.50   750.0                  14.49               37.0       536.13        29.14     123880.97     -6386.37    -92.255255         0.0569              0.077447
+2         12546     JIM BEAM BRANDS COMPANY   1005                  34.99               27.34                   247.0           6752.98   375.0                  34.99              918.0     32120.82       359.97     123880.97     25367.84    375.654008         3.7166              4.756540
+3          2000  SOUTHERN WINE & SPIRITS NE  10058                  13.99                9.26                 21097.0         195358.22   750.0                  14.99             6447.0     96640.53       718.86      18808.83    -98717.69    -50.531629         0.3056              0.494684
+4          2000  SOUTHERN WINE & SPIRITS NE  10058                  13.99                9.26                 21097.0         195358.22   750.0                  14.99             6447.0     96640.53       718.86        207.76    -98717.69    -50.531629         0.3056              0.494684
+2025-08-21 12:06:02,540 - INFO - Ingesting Data into MySQL...
+2025-08-21 12:06:14,168 - INFO - -------------- Ingestion completed ----------------
+2025-08-21 12:09:31,390 - INFO - Creating SQLAlchemy engine...
+2025-08-21 12:09:31,391 - INFO - Creating Vendor Summary DataFrame...
+2025-08-21 12:09:31,391 - DEBUG - Running vendor summary SQL query...
+2025-08-21 12:13:09,910 - DEBUG - Vendor summary loaded: 22286 rows, 13 cols
+2025-08-21 12:13:09,917 - INFO - Head:
+   VendorNumber                   VendorName  Brand  ActualPricePerProduct  PurPricePerProduct  TotalQuantityPurchased  TotalAmountSpent Volume  SalesPricePerQuantity  TotalQuantitySold  TotalEarned  TotalExcise  TotalFreight
+0         12546  JIM BEAM BRANDS COMPANY       1004                  16.49               10.65                   650.0           6922.50    750                  16.49                5.0        82.45         3.94     123880.97
+1         12546  JIM BEAM BRANDS COMPANY       1004                  16.49               10.65                   650.0           6922.50    750                  14.49               37.0       536.13        29.14     123880.97
+2         12546  JIM BEAM BRANDS COMPANY       1005                  34.99               27.34                   247.0           6752.98    375                  34.99              918.0     32120.82       359.97     123880.97
+3          2000  SOUTHERN WINE & SPIRITS NE   10058                  13.99                9.26                 21097.0         195358.22    750                  14.99             6447.0     96640.53       718.86      18808.83
+4          2000  SOUTHERN WINE & SPIRITS NE   10058                  13.99                9.26                 21097.0         195358.22    750                  14.99             6447.0     96640.53       718.86        207.76
+2025-08-21 12:13:09,918 - INFO - Cleaning Data...
+2025-08-21 12:13:09,918 - DEBUG - Cleaning data...
+2025-08-21 12:13:09,952 - DEBUG - Cleaning complete.
+2025-08-21 12:13:09,960 - INFO - Head (clean):
+   VendorNumber                  VendorName  Brand  ActualPricePerProduct  PurPricePerProduct  TotalQuantityPurchased  TotalAmountSpent  Volume  SalesPricePerQuantity  TotalQuantitySold  TotalEarned  TotalExcise  TotalFreight  GrossProfit  ProfitMargin  StockTurnOver  SalesToPurchaseRatio
+0         12546     JIM BEAM BRANDS COMPANY   1004                  16.49               10.65                   650.0           6922.50   750.0                  16.49                5.0        82.45         3.94     123880.97     -6840.05    -98.808956         0.0077              0.011910
+1         12546     JIM BEAM BRANDS COMPANY   1004                  16.49               10.65                   650.0           6922.50   750.0                  14.49               37.0       536.13        29.14     123880.97     -6386.37    -92.255255         0.0569              0.077447
+2         12546     JIM BEAM BRANDS COMPANY   1005                  34.99               27.34                   247.0           6752.98   375.0                  34.99              918.0     32120.82       359.97     123880.97     25367.84    375.654008         3.7166              4.756540
+3          2000  SOUTHERN WINE & SPIRITS NE  10058                  13.99                9.26                 21097.0         195358.22   750.0                  14.99             6447.0     96640.53       718.86      18808.83    -98717.69    -50.531629         0.3056              0.494684
+4          2000  SOUTHERN WINE & SPIRITS NE  10058                  13.99                9.26                 21097.0         195358.22   750.0                  14.99             6447.0     96640.53       718.86        207.76    -98717.69    -50.531629         0.3056              0.494684
+2025-08-21 12:13:09,960 - INFO - Ingesting Data into MySQL...
+2025-08-21 12:13:21,156 - INFO - -------------- Ingestion completed ----------------
