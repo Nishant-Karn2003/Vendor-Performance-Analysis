@@ -1,4 +1,5 @@
 📊 Vendor Performance Analysis
+
 📌 Introduction
 
 Efficient vendor management plays a crucial role in supply chain and business performance. This project focuses on analyzing vendor and brand-level performance using sales and inventory data. The analysis goes beyond just identifying vendors with high or low sales—it also captures inefficiencies within individual brands supplied by a vendor.
